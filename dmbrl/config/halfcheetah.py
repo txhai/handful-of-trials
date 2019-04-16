@@ -9,16 +9,16 @@ import gym
 
 from dmbrl.misc.DotmapUtils import get_required_argument
 from dmbrl.modeling.layers import FC
-import dmbrl.env
+# import dmbrl.env
 
 
 class HalfCheetahConfigModule:
-    ENV_NAME = "MBRLHalfCheetah-v0"
+    ENV_NAME = "HalfCheetah-v2"
     TASK_HORIZON = 1000
     NTRAIN_ITERS = 300
     NROLLOUTS_PER_ITER = 1
     PLAN_HOR = 30
-    MODEL_IN, MODEL_OUT = 24, 18
+    MODEL_IN, MODEL_OUT = 23, 17
     GP_NINDUCING_POINTS = 300
 
     def __init__(self):
